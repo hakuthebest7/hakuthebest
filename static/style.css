@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', monospace;
+  background: linear-gradient(135deg, #020024, #090979, #00d4ff);
+  color: #00ffcc;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 600px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 20px #00ffff80;
+}
+
+h1 {
+  text-align: center;
+  color: #00ffff;
+  margin-bottom: 20px;
+}
+
+#chatbox {
+  height: 400px;
+  overflow-y: auto;
+  background: rgba(255, 255, 255, 0.05);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.user, .ai {
+  margin: 8px 0;
+  line-height: 1.4em;
+}
+
+.user { color: #fff; }
+.ai { color: #00ffcc; }
+
+.input-area {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 10px 0 0 10px;
+  background: #111;
+  color: #0ff;
+}
+
+.input-area button {
+  padding: 10px 20px;
+  background: #00ffff;
+  color: #000;
+  border: none;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input-area button:hover {
+  background: #00ff99;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
+  opacity: 0.7;
+}
